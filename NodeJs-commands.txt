@@ -1,0 +1,83 @@
+//Start to work with packed json
+npm init -y
+
+//Express and body parser to work with post
+npm install express body-parser
+
+//Sequelize
+npm install express body-parser
+
+//Drives for Mysql
+npm install mysql2
+
+/Nodemo
+npm install -g nodemon
+
+//Bycryptjs
+npm install bcryptjs
+
+//Validator
+npm install express-validator
+
+//JWT
+npm install jwt-simple
+
+//Moment -- Manejo de fechas
+npm install moment
+
+
+https://www.youtube.com/watch?v=T6rGUZGAWBk&ab_channel=10MinutosProgramando
+
+
+
+
+//Express and body parser
+node i express body-parser
+
+//Injeccion dependencies
+npm i awilix
+
+//Postgresql (Optional)
+npm i pg
+
+//Mysql (used)
+npm i mysql2
+
+//Inyectar variables de entorno (solo para desarrollo)
+npm i dotenv
+
+//CORS
+npm i cors
+
+//Comprimir peticiones http
+ npm i compression
+
+//npm i structure (solo de node v12 para abajo)
+
+//Automapper
+npm i automapper-js
+
+//Sequelize CLI
+npm i -g sequelize-cli
+sequelize init (para crear un proyecto de sequelize)
+
+//To create models in sequelize cli
+sequelize model:create --name Course --attributes name:string,status:string
+
+sequelize model:create --name Subject --attributes name:string description:string status:string
+
+sequelize model:create --name Teacher --attributes name:string,lastname:string,biography:string,birthdate:date,email:string,username:string,password:string,status:string
+
+sequelize model:create --name Section --attributes teacherId:integer,subjectId:integer,courseId:integer,status:string
+
+sequelize model:create --name Student --attributes name:string,lastname:string,birthdate:date,email:string,username:string,password:string,status:string
+
+sequelize model:create --name Registration --attributes sectionId:integer,studentId:integer,status:string
+//URL CONNECTION FOR PG
+
+sequelize db:migrate --url "postgres://postgres:mysecretpassword@localhost:5432/school_dev"
+
+//URL CONNECTION FOR MYSQL
+
+sequelize db:migrate --url "mysql://root:root@localhost:3399/school_dev"
+

@@ -1,0 +1,13 @@
+@import "./global.scss";
+
+//Variables
+@import "./variables.scss";
+
+//Mixins
+@import "./mixins.scss";
+
+@include responsive(1250px) {
+  .container {
+    width: 90%;
+  }
+}

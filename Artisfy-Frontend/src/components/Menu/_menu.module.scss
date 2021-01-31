@@ -1,0 +1,49 @@
+@import "../../scss/main.scss";
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 1);
+
+
+  &_content {
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    justify-content: space-between;
+
+    &_left {
+      @include flexCenter();
+
+      & img {
+        width: 50px;
+        height: auto;
+      }
+    }
+
+    &_right {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      
+
+      & li {
+        display: flex;
+
+        & a {
+          text-decoration: none;
+          color: $black;
+          margin: 0px 10px;
+          font-size: 17px;
+        }
+
+        & span{
+          color: $grey;
+          font-size: 14px;
+          margin: 1px 10px;
+        }
+      }
+    }
+  }
+}

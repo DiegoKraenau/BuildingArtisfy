@@ -1,0 +1,79 @@
+@import "../../../scss/main.scss";
+
+.register-form {
+  width: 100%;
+  height: 700px;
+
+  &-content {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+
+    & form {
+      width: 500px;
+      height: 500px;
+      text-align: center;
+
+      input {
+        display: inline-block;
+        width: 80%;
+        height: 30px;
+        padding: 10px 10px;
+        margin: 20px auto;
+        border: none;
+        border-bottom: 1px solid $black;
+        font-family:'Poppins', sans-serif; 
+
+        &::after{
+          border: none;
+          border-bottom: 1px solid $black;
+        }
+
+        @include responsive(414px){
+          width: 95%;
+        }
+
+       
+      }
+
+      button {
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+        background: $white;
+        color: $black;
+        border-radius: 30px;
+        font-size: 17px;
+        font-weight: 500;
+        transition: 0.5s all;
+        border: 1px solid black;
+        font-family:'Poppins', sans-serif;     
+        margin-top: 20px;    
+
+        &:hover {
+          color: $white;
+          background: $grey;
+        }
+
+        @include responsive(414px){
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  &-title {
+    margin: 40px auto;
+    width: 100%;
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+    @include responsive(414px){
+      font-size: 30px;
+    }
+  }
+}

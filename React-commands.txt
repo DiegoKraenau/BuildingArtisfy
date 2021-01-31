@@ -1,0 +1,15 @@
+sfc
+Conocimientos Js:
+https://bluuweb.github.io/javascript/fundamentos/
+React hook form:
+https://react-hook-form.com/get-started
+
+npm install react-hook-form
+npm install uuid
+npm install react-router-dom
+
+npm i redux react-redux redux-devtools redux-thunk axios
+
+//Firebase
+https://www.youtube.com/watch?v=M43eDCKqnvk&ab_channel=codigofacilito
+npm install --save firebase reactfire@next

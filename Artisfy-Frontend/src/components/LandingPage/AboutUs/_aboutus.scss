@@ -1,0 +1,140 @@
+@import "../../../scss/main.scss";
+
+.aboutus {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  &-title {
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 30px;
+
+    @include responsive(414px) {
+      font-size: 30px;
+    }
+  }
+
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 90px;
+    position: relative;
+
+    @include responsive(1000px) {
+      height: auto;
+      flex-wrap: wrap;
+      @include flexCenter();
+    }
+
+    & img {
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      top: 40px;
+
+      @include responsive(1000px) {
+        width: 270px;
+        height: 270px;
+      }
+
+      @include responsive(418px) {
+        top: 20px;
+        width: 200px;
+        height: 200px;
+      }
+    }
+
+    & p {
+      display: inline-block;
+      width: 100%;
+      font-size: 23px;
+      font-weight: 300;
+
+      @include responsive(1000px) {
+        font-size: 15px;
+        font-weight: 300;
+      }
+
+      @include responsive(418px) {
+        font-size: 13px;
+        text-align: justify;
+      }
+    }
+  }
+}
+
+.background-image {
+  width: 320px;
+  height: 320px;
+  background: $grey;
+  position: relative;
+
+  @include responsive(1000px) {
+    margin-bottom: 40px;
+    width: 270px;
+    height: 270px;
+  }
+
+  @include responsive(418px) {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.texto {
+  width: 60%;
+  padding: 10px 0px 0px 30px;
+
+  @include responsive(1000px) {
+    width: 100%;
+    padding: 0px 10px;
+  }
+}
+
+//Para las imagenes
+.imgRight {
+  right: 35px;
+
+  @include responsive(418px) {
+    right: 20px;
+  }
+}
+
+.imgLeft {
+  left: 35px;
+
+  @include responsive(418px) {
+    left: 20px;
+  }
+}
+
+//Background
+
+.bgRight {
+  position: absolute;
+  right: 0;
+  @include responsive(1000px) {
+    position: relative;
+  }
+}
+
+.bgLeft {
+}
+
+//test
+.pa2 {
+  width: 400px;
+  height: 100px;
+  background: red;
+}
+
+.pa1 {
+  width: 600px;
+  height: 200px;
+  background: blue;
+}

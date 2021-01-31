@@ -1,0 +1,192 @@
+@import "../../scss/main.scss";
+
+/*
+.login {
+  width: 100%;
+  height: 100vh;
+  @include flexCenter();
+
+  &-section {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-left {
+    @include flexCenter();
+    width: 60%;
+
+    & img {
+      width: 500px;
+      height: 500px;
+      text-align: center;
+    }
+  }
+
+  &-right {
+    width: 40%;
+    text-align: center;
+    @include flexCenter();
+
+    & form {
+      width: 100%;
+      height: 300px;
+
+      & h2 {
+        width: 100%;
+        font-size: 35px;
+        font-weight: 700;
+      }
+
+      & input {
+        width: 70%;
+        height: 30px;
+        padding: 20px 10px;
+        font-family: "Poppins", sans-serif;
+        margin: 15px 0;
+        border: none;
+        border-bottom: 1px solid $black;
+
+        &::after {
+          border: none;
+          border-bottom: 1px solid $black;
+        }
+      }
+
+      & button {
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+        background: $white;
+        color: $black;
+        border-radius: 30px;
+        font-size: 17px;
+        font-weight: 500;
+        transition: 0.5s all;
+        border: 1px solid black;
+        font-family: "Poppins", sans-serif;
+        margin-top: 40px;
+        cursor: pointer;
+
+        &:hover {
+          color: $white;
+          background: $grey;
+        }
+      }
+    }
+  }
+}
+*/
+
+/*https://dribbble.com/shots/13774549-Recharge-Quickly*/
+
+.navbar {
+  background-color: black;
+  position: relative;
+}
+
+body {
+  //background-color: whitesmoke;
+}
+
+.login-form {
+  width: 100%;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: repeat(2, 60% 40%);
+  grid-template-rows: repeat(1, 1fr);
+  column-gap: 25px;
+  margin: 50px auto !important;
+
+
+  
+  @include responsive(414px) {
+    grid-template-columns: repeat((1, 1fr));
+  }
+
+  &-left {
+    height: auto;
+    position: relative;
+
+    @include responsive(414px) {
+      display: none;
+    }
+
+    & img {
+      position: absolute;
+      width: 400px;
+      height: 300px;
+      right: 0;
+      bottom: 0;
+    }
+
+    &-title {
+      margin-top: 50px;
+
+      & h2 {
+        font-size: 64px;
+        font-weight: 700;
+        word-spacing: 10px;
+      }
+    }
+
+    &-subtitle {
+      margin-top: 50px;
+
+      & h4 {
+        font-size: 17px;
+        font-weight: 300;
+        word-spacing: 10px;
+      }
+    }
+  }
+
+  &-right {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    @include responsive(414px) {
+      justify-content: center;
+    }
+
+    & form {
+      width: 80%;
+      margin-right: 5px;
+      height: auto;
+      text-align: center;
+
+      & input {
+        width: 90%;
+        height: 40px;
+        padding: 15px;
+        margin: 20px 0;
+        border: none;
+        outline: none;
+        font-family: "Poppins", sans-serif;
+        background: #b0d2e5;
+        border-radius: 10px;
+        font-size: 17px;
+      }
+
+      & button {
+        width: 90%;
+        height: 40px;
+        margin: 10px;
+        font-family: "Poppins", sans-serif;
+        background: #4c63c9;
+        border-radius: 10px;
+        color: $white;
+        font-size: 17px;
+      }
+
+      & hr {
+        width: 90%;
+        margin: auto;
+        color: #c2c1c187;
+      }
+    }
+  }
+}

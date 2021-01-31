@@ -1,0 +1,84 @@
+@import "../../../scss/main.scss";
+
+.header {
+  width: 100%;
+  height: 90vh;
+  @include bgImage("../images/instrumento.jpg");
+  background-color: rgba(0, 0, 0, .6);
+  
+  @include responsive(414px){
+      height: 100vh;
+  }
+
+  &-content {
+    width: 100%;
+    height: inherit;
+    color: $white;
+    @include flexCenter();
+
+   
+
+    &-text{
+        
+        text-align: center;
+
+        & h1{
+            font-size: 67px;
+            font-weight:800;
+
+            @include responsive(1250px){
+                font-size: 50px;
+            }
+
+            @include responsive(414px){
+                font-size: 40px;
+            }
+
+        }
+
+        & h3{
+            font-size: 25px;
+            font-weight: 500;
+            margin-bottom: 30px;
+            letter-spacing: 3px;
+
+            @include responsive(1250px){
+                font-size: 20px;
+            }
+
+            @include responsive(414px){
+                font-size: 15px;
+            }
+        }
+
+        & a{
+            display: inline-block;
+            text-decoration: none;
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            background: $white;
+            color: $black;
+            border-radius: 30px;
+            font-size: 17px;
+            font-weight: 500;
+            transition: .5s all;
+            
+            @include responsive(1250px){
+                width: 180px;
+                font-size: 15px;
+            }
+
+            &:hover{
+                color: $white;
+                background: $grey;
+            }
+
+        }
+
+
+    }
+  }
+}
+
+
